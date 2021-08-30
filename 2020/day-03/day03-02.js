@@ -1,3 +1,8 @@
+// https://adventofcode.com/2020/day/3#part2
+// Like before, we are given a map with spaces and trees
+// This time, there are multiple ways to move (see MOVEMENTS variable)
+// Find the # of trees each movement type hits, and multiply them together.
+
 const {SAMPLE_MAP, mapData} = require('./input');
 
 // Steps through map top to bottom (H+3, V+1) & counts how many # we hit using the given map

@@ -1,3 +1,9 @@
+// https://adventofcode.com/2020/day/3
+// Given a map as a 2D set of .s and #s, where . = open space & # = trees
+// We start out in the top left of the "map" and can only move a certain way
+// The map repeats horizontally, but is finite vertically.
+// Find the number of trees we hit on our way down this map.
+
 const {SAMPLE_MAP, mapData} = require('./input');
 
 // Steps through map top to bottom (H+3, V+1) & counts how many # we hit using the given map
