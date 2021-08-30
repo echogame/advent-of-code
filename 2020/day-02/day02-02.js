@@ -1,3 +1,12 @@
+// Given a bunch of strings about data, output number of valid passwords
+// Data format: "#1-#2 $: &&&&&&&&&&"
+// - #1 is the first index it can appear
+// - #2 is the second index it can appear
+// -- note: letter cannot appear in both 1 and 2
+// -- note: there is no concept of index 0
+// - $ is the letter in question
+// - &&&&&&&&&& is the password string
+
 const {SAMPLE_DATA, passwords} = require('./input.js');
 
 function howManyValidV2(passwordsList = []) {

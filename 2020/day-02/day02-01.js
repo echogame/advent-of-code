@@ -1,3 +1,8 @@
+// Given a bunch of strings about data, output number of valid passwords
+// Data format: "##-## $: &&&&&&&&&&"
+// - ##-## is the range of number of times a letter can appear
+// - $ is the letter in question
+// - &&&&&&&&&& is the actual password
 const {SAMPLE_DATA, passwords} = require('./input.js');
 
 function howManyValid (passwordsList = []) {
