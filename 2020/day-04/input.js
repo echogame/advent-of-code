@@ -6,8 +6,6 @@ module.exports = {
     "hcl:#cfa07d eyr:2025 pid:166559648 iyr:2011 ecl:brn hgt:59in"
   ],
 
-  // If the data comes in as 1 batch file, then split() on
-  // `\n\n`, then replace `\n` with ' ' for the final result
   inputData: [
     "eyr:2028 iyr:2016 byr:1995 ecl:oth pid:543685203 hcl:#c0946f hgt:152cm cid:252", 
     "hcl:#733820 hgt:155cm iyr:2013 byr:1989 pid:728471979 ecl:grn eyr:2022", 
