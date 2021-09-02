@@ -1,5 +1,5 @@
 module.exports = {
-  SAMPLE_DATA: `abc
+  SAMPLE_DATA1: `abc
 
 a
 b
@@ -14,6 +14,10 @@ a
 a
 
 b`,
+
+  SAMPLE_DATA2: `abcx
+abcy
+abcz`,
 
   inputData: `cady
 ipldcyf
@@ -2144,4 +2148,3 @@ npqfohbrl
 kegchuidstwnm
 nzhlj`
 };
-}
