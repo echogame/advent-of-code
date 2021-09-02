@@ -25,7 +25,7 @@ function countAnswers(answersString = '') {
   const answerKey = {};
   for (let i = 0; i< answersString.length; i++) {
     if ((answersString[i]) >= 'a' && answersString[i] <= 'z') {
-      answerKey[answersString[i]] = answerKey[answersString[i]]++ || 1;
+      answerKey[answersString[i]] = answerKey[answersString[i]]+1 || 1;
     }
   }
 
