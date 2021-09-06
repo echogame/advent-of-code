@@ -7,8 +7,6 @@ function howManyBagVariations(bagRules, baseBag) {
   let bagTypeCount = parentColors.length;
   let colorsAlreadyChecked = Object.assign({}, originalParents);
 
-  // console.log('first colors collected to check:', parentColors);
-
   while (parentColors.length) {
     // Find new parent colors to check over and over until no parents left
     const newColors = {};
@@ -31,7 +29,6 @@ function howManyBagVariations(bagRules, baseBag) {
       }
     });
 
-    // console.log('new parent colors to check:', parentColors);
     bagTypeCount += parentColors.length 
   }
 
@@ -52,7 +49,6 @@ function _findParentsWithColor(bagRules, childColor) {
 function testSolution(ruleString, bagToFind) {
   const bagRules = shared.parseBagArray(shared.parseInputStringToArray(ruleString));
 
-  // console.log(bagRules);
   const solution = howManyBagVariations(bagRules, bagToFind);
 
   console.log(bagToFind, 'can be in # bag types:', solution);

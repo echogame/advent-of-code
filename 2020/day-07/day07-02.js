@@ -19,7 +19,7 @@ function checkChildBags(bagRules, parentBag) {
   });
 
 
-  // Add to the count each childe bag plus its children*# of itself
+  // Add to the count each child bag plus its total children
   childBags.forEach(childBag => {
     childBagCount += childBag.count + checkChildBags(bagRules, childBag);
   });
@@ -31,7 +31,6 @@ function checkChildBags(bagRules, parentBag) {
 function testSolution(ruleString, bagToFind) {
   const bagRules = shared.parseBagArray(shared.parseInputStringToArray(ruleString));
 
-  // console.log(bagRules);
   const solution = howManyChildBags(bagRules, bagToFind);
 
   console.log(bagToFind, 'contains this many child bags', solution);
